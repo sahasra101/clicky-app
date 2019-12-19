@@ -3,8 +3,8 @@ import "./style.css";
 
 function ImageCard(props) {
   return (
-    <div className="card" onClick={() => props.cardShuffle()}>
-      <div onClick={() => props.imageClick(props.id)} className="img-container">
+    <div className="card">
+      <div id={props.id} className="img-container">
         <img id={props.id} alt={props.name} src={props.image} />
       </div>
     </div>

@@ -1,38 +1,36 @@
 import React, { Component } from "react";
+import NavBar from "./components/NavBar";
 import ImageCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import jluimages from "./jluimages.json";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends
+    jluimages
   };
 
   imageClick = id => {
 
   };
 
-  cardShuffle(){
+  cardShuffle() {
 
-  }
+  };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.friends and render a ImageCard component for each JSON object
   render() {
     return (
-      <Wrapper>
-        <nav className="navbar sticky-top navbar-light bg-light">
-          <ul>
-            <li className="brand"><a href="/">Clicky Game</a></li>
-            <li>Click an image to begin!</li>
-            <li>Score: 0 | Top Score: 0</li>
-            </ul>
-            </nav>
-        <Title>Superfriends List</Title>
-        {this.state.friends.map(friend => (
+      <div>
+        <NavBar 
+        currentScore={this.state.currentScore}
+        topScore={this.state.topScore}
+        />
+        <Wrapper>
+        <Title>Superfriends Image Game</Title>
+        {this.state.jluimages.map(friend => (
           <ImageCard
-            removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
             name={friend.name}
@@ -41,7 +39,8 @@ class App extends Component {
             location={friend.location}
           />
         ))}
-      </Wrapper>
+        </Wrapper>
+      </div>
     );
   }
 }
