@@ -8,7 +8,10 @@ import jluimages from "./jluimages.json";
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    jluimages
+    jluimages,
+    currentScore: 0,
+    topScore: 0,
+    clicked: []
   };
 
   imageClick = id => {
@@ -28,7 +31,11 @@ class App extends Component {
         topScore={this.state.topScore}
         />
         <Wrapper>
-        <Title>Superfriends Image Game</Title>
+        <Title>Superfriends Image Game
+        <br/>
+        <h5>Get 1 Point for Clicking Each Image Once</h5>
+        <h5>Avoid Clicking Any Image Twice</h5>
+        </Title>
         {this.state.jluimages.map(friend => (
           <ImageCard
             id={friend.id}
