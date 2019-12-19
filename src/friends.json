@@ -1,86 +1,86 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea"
+    "name": "Superman",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/13/132327/6507037-28872490_1638064799604695_1250122498385004714_n.jpg",
+    "alias": "Clark Kent",
+    "location": "Metropolis"
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-    "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor"
+    "name": "Batman",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/11125/111253436/6733777-4.jpg",
+    "alias": "Bruce Wayne",
+    "location": "Gotham"
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "occupation": "Cashier",
-    "location": "An Easter Island Head"
+    "name": "Wonder Woman",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_super/11130/111304535/6850214-0988737047-wonde.jpg",
+    "alias": "Diana Prince",
+    "location": "Paradise Island"
   },
   {
     "id": 4,
-    "name": "Dexter",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
-    "occupation": "Boy Genius",
-    "location": "A Secret Laboratory"
+    "name": "Green Lantern",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/11114/111147698/6520709-1532011657748.jpg",
+    "alias": "Hal Jordan",
+    "location": "Green Lantern Corp"
   },
   {
     "id": 5,
-    "name": "Courage",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
-    "occupation": "A Cowardly Dog",
-    "location": "Nowhere, Kansas"
+    "name": "The Flash",
+    "image": "https://comicvine1.cbsistatic.com/uploads/original/10/101435/2574436-tumblr_lqr7ewqicv1qzvw5po1_500.jpg",
+    "alias": "Barry Allen",
+    "location": "Central City"
   },
   {
     "id": 6,
-    "name": "Doug Funnie",
-    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
-    "occupation": "Student",
-    "location": "Bluffington"
+    "name": "Aquaman",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_super/13/139093/2855803-aquaman_by_xxnightblade08xx.jpg",
+    "alias": "Arthur Curry",
+    "location": "Atlantis"
   },
   {
     "id": 7,
-    "name": "Bugs Bunny",
-    "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
-    "occupation": "Looney Toon",
-    "location": "A Rabbit Burrow"
+    "name": "Firestorm",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/10/100647/2788249-frstm_cv14_r1.jpg",
+    "alias": "Ronny Raymond & Professor Stein",
+    "location": "New York City"
   },
   {
     "id": 8,
-    "name": "Johnny Bravo",
-    "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
-    "occupation": "Ladies Man",
-    "location": "Aron City"
+    "name": "Atom",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/10/100647/6059435-atom.jpg",
+    "alias": "Ray Palmer",
+    "location": "quantum multiverse"
   },
   {
     "id": 9,
-    "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-    "occupation": "Adventurer",
-    "location": "California"
+    "name": "Red Tornado",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/10/100647/6032520-rt.jpg",
+    "alias": "Red Tornado",
+    "location": "JLU Headquarters"
   },
   {
     "id": 10,
-    "name": "Rocko",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-    "occupation": "Cashier",
-    "location": "O-Town, California"
+    "name": "Hawkman",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/11125/111253436/6808576-hawkman_vol_5_1_textless.jpg",
+    "alias": "Carter Hall",
+    "location": "JLU Headquarters"
   },
   {
     "id": 11,
-    "name": "Captain Planet",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
-    "occupation": "Superhero",
-    "location": "Earth"
+    "name": "Martian Manhunter",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/10/100647/6876907-mm4.jpg",
+    "alias": "Martian Manhunter",
+    "location": "JLU Headquarters"
   },
   {
     "id": 12,
-    "name": "Ickis",
-    "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-    "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump"
+    "name": "Dr. Fate",
+    "image": "https://comicvine1.cbsistatic.com/uploads/scale_small/11125/111253436/5678114-56fce2a5c4e5fa7a21e60d92f3f232e8.jpg",
+    "alias": "Kent Nelson",
+    "location": "JLU Headquarters"
   }
 ]
