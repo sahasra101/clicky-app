@@ -11,6 +11,7 @@ class App extends Component {
     jluimages: jluimages,
     currentScore: 0,
     topScore: 0,
+    navMiddleMessage: "Click An Image To Begin!",
     clicked: []
   };
 
@@ -26,18 +27,55 @@ class App extends Component {
   }
 
   shuffleImages = event => {
-    let id = parseInt(event.target.id);
     let jluimages = this.shuffle(this.state.jluimages);
-    this.setState({ jluimages });
+    let id = event.target.id;
+    this.setState({ jluimages }, 
+    this.checkScore(id));
   }
 
-  // Map over this.state.friends and render a ImageCard component for each JSON object
+  checkScore = clickedId => {
+    let clickedArray = this.state.clicked;
+
+    if (this.state.currentScore > this.state.topScore) {
+      this.setState({
+        topScore: this.state.currentScore
+      })
+    }
+    
+    if (clickedArray.includes(clickedId)) {
+        this.setState({
+          currentScore: 0,
+          clicked: [],
+          navMiddleMessage: "Please try again!"
+        })
+      }
+     else {
+      this.state.clicked.push(clickedId);
+      this.setState({
+        navMiddleMessage: "You Guessed Correctly!! Keep Going!!",
+        clicked: this.state.clicked,
+        currentScore: this.state.currentScore + 1
+      });
+    }
+
+    if (this.state.clicked.length === 12) {
+      this.setState({
+        navMiddleMessage: "Congratulations You Win! Play again!",
+        clicked: [],
+        currentScore: 0,
+        topScore: 12
+      });
+    }
+  }
+
+  // Map over this.state.jluimages and render a ImageCard component for each JSON object
   render() {
     return (
       <div>
         <NavBar
           currentScore={this.state.currentScore}
           topScore={this.state.topScore}
+          navMiddleMessage={this.state.navMiddleMessage}
         />
         <Wrapper>
           <Title>Superfriends Image Game
@@ -55,6 +93,7 @@ class App extends Component {
             />
           ))}
         </Wrapper>
+        <footer class="footer"/>
       </div>
     );
   }
