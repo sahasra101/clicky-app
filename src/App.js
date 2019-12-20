@@ -32,15 +32,15 @@ class App extends Component {
     this.setState({ jluimages }, 
     this.checkScore(id));
   }
+ 
+  setTopScore = () => {
+    if (this.state.currentScore > this.state.topScore) {
+      this.setState({topScore: this.state.currentScore});
+    }
+  }
 
   checkScore = clickedId => {
     let clickedArray = this.state.clicked;
-
-    if (this.state.currentScore > this.state.topScore) {
-      this.setState({
-        topScore: this.state.currentScore
-      })
-    }
     
     if (clickedArray.includes(clickedId)) {
         this.setState({
@@ -55,8 +55,14 @@ class App extends Component {
         navMiddleMessage: "You Guessed Correctly!! Keep Going!!",
         clicked: this.state.clicked,
         currentScore: this.state.currentScore + 1
+      }, function() {
+      this.setTopScore();
       });
     }
+
+    // if (this.state.currentScore > this.state.topScore) {
+    //   this.setState({topScore: this.state.currentScore});
+    // }
 
     if (this.state.clicked.length === 12) {
       this.setState({
